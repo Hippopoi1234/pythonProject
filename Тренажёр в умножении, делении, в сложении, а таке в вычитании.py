@@ -48,6 +48,7 @@ while not (zizni <= 0):
                     print(a//b)
                 else:
                     print("Тебе не хватает,", 200-money)
+            print("❤"*zizni)
         if fge>=1:
             break
     elif k == 2:
@@ -87,6 +88,7 @@ while not (zizni <= 0):
                 print(a * b)
             else:
                 print("Тебе не хватает,", 200 - money)
+        print("❤" * zizni)
     if fge >= 1:
         break
     elif k == 3:
@@ -126,6 +128,7 @@ while not (zizni <= 0):
                 print(a + b)
             else:
                 print("Тебе не хватает,", 200 - money)
+        print("❤" * zizni)
     if fge >= 1:
         break
     elif k == 4:
@@ -169,6 +172,7 @@ while not (zizni <= 0):
                     print(a - b)
                 else:
                     print("Тебе не хватает,", 200 - money)
+            print("❤" * zizni)
         if fge >= 1:
             break
 else:
