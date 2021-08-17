@@ -15,6 +15,7 @@ while not (zizni <= 0):
             a = randint(1, 10)
             b = randint(1, 10)
         else:
+            print("❤"*zizni)
             print("А сможешь правильно посчитать, сколько будет", str(a) + ":" + str(b))
             c = int(input())
             if a // b == c:
@@ -48,12 +49,13 @@ while not (zizni <= 0):
                     print(a//b)
                 else:
                     print("Тебе не хватает,", 200-money)
-            print("❤"*zizni)
+            print("❤" * zizni)
         if fge>=1:
             break
     elif k == 2:
         a = randint(1, 10)
         b = randint(1, 10)
+        print("❤" * zizni)
         print("А сможешь правильно посчитать, сколько будет", str(a) + "×" + str(b))
         c = int(input())
         if a * b == c:
@@ -94,6 +96,7 @@ while not (zizni <= 0):
     elif k == 3:
         a = randint(1, 10)
         b = randint(1, 10)
+        print("❤" * zizni)
         print("А сможешь правильно посчитать, сколько будет", str(a) + "+" + str(b))
         c = int(input())
         if a + b == c:
@@ -138,6 +141,7 @@ while not (zizni <= 0):
             a = randint(1, 10)
             b = randint(1, 10)
         else:
+            print("❤" * zizni)
             print("А сможешь правильно посчитать, сколько будет", str(a) + "-" + str(b))
             c = int(input())
             if a - b == c:
