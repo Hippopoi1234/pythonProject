@@ -58,7 +58,7 @@ while not (zizni <= 0):
         if a * b == c:
             print("Верно!!!")
             kda += 1
-            money+=50
+            money+=40
         else:
             print("Не повезло, -1 жизнь.")
             zizni -= 1
@@ -97,7 +97,7 @@ while not (zizni <= 0):
         if a + b == c:
             print("Верно!!!")
             kda += 1
-            money+=50
+            money+=30
         else:
             print("Не повезло, -1 жизнь.")
             zizni -= 1
@@ -140,7 +140,7 @@ while not (zizni <= 0):
             if a - b == c:
                 print("Верно!!!")
                 kda += 1
-                money+=50
+                money+=20
             else:
                 print("Не повезло, -1 жизнь.")
                 zizni -= 1
