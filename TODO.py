@@ -11,3 +11,6 @@ while not len(b) == 0:
         b.remove(b[c])
         for i in enumerate(b, 1):
             print(str(i[0]) + ")", i[1])
+    g = input("Хочешь ли ты добавить задачу? ")
+    if g == "да":
+        b.append(input())
