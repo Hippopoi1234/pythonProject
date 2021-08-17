@@ -19,8 +19,12 @@ Hello, Timur and Roman and Ruslan!
 """
 
 
-def greet(*args):
-    return "Hello, " + " and ".join(args) + "!"
+def greet(name, *args):
+    res = "Hello, " + name
+    if len(args) > 0:
+        res += " and " + " and ".join(args)
+    res += "!"
+    return res
 
 
 print(greet('Timur'))
