@@ -1,0 +1,43 @@
+import turtle
+
+turtle.hideturtle()
+turtle.speed(10)
+a = [(-5, -5), (-2, -5), (-2, -2), (5, -2), (5, -5), (8, -5), (8, -1), (10, 1), (10, 2), (12, 4), (11, 4), (9, 2),
+     (9, 1), (-5, 1), (-6, 2), (-7, 2), (-7, 4), (-8, 4), (-8, 2), (-9, 2), (-9, 4), (-10, 4), (-10, 2), (-10, -4), (-6, -4), (-6, 0), (-5, -1), (-5, -5)]
+turtle.shape("arrow")
+turtle.forward(300)
+turtle.stamp()
+turtle.back(600)
+turtle.goto(0, 0)
+turtle.left(90)
+turtle.forward(300)
+turtle.back(600)
+# turtle.left(180)
+turtle.forward(600)
+turtle.stamp()
+turtle.penup()
+for i in a:
+    i = list(i)
+    i[0] = i[0] * 10
+    i[1] = i[1] * 10
+    i = tuple(i)
+    turtle.goto(i)
+    turtle.pendown()
+turtle.penup()
+turtle.goto(-70, -10)
+turtle.pendown()
+turtle.dot(5)
+turtle.penup()
+turtle.goto(-80, -10)
+turtle.pendown()
+turtle.right(180)
+turtle.forward(10)
+turtle.left(90)
+turtle.forward(10)
+turtle.back(20)
+turtle.penup()
+turtle.goto(-90, -10)
+turtle.pendown()
+turtle.dot(5)
+turtle.hideturtle()
+turtle.mainloop()
