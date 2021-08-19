@@ -1,0 +1,9 @@
+a = set(input().split())
+b = set(input().split())
+c = []
+for i in a:
+    for j in b:
+        if int(i) == int(j):
+            c.append(int(i))
+c.sort()
+print(*c)
