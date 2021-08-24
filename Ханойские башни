@@ -1,0 +1,5 @@
+a = int(input())
+answer = 0
+for i in range(a):
+    answer += 2 ** i
+print(answer)
