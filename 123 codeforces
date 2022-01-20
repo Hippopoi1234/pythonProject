@@ -1,0 +1,11 @@
+a = input()
+if len(a) >= 11:
+    if a[0] == "8":
+        print(len(a) - 11)
+    else:
+        if "8" in a and len(a) - a.find("8") >= 11:
+            print(a.find("8"))
+        else:
+            print(-1)
+else:
+    print(-1)
