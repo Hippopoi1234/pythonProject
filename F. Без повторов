@@ -1,0 +1,92 @@
+"""
+F. Без повторов
+ограничение по времени на тест1 секунда
+ограничение по памяти на тест256 мегабайт
+вводстандартный ввод
+выводстандартный вывод
+У Сени есть n кубиков разных цветов. Он хочет поставить их в ряд так, чтобы никакие два рядом стоящих кубика не были одного цвета. Помогите ему это сделать.
+
+Входные данные
+Первая строка содержит число n — число кубиков (1≤n≤100). Вторая строка содержит строку из n букв, каждая буква этой строки задает цвет одного из кубиков (одинаковые буквы соответствуют одинаковым цветам). Гарантируется, что строка содержит только заглавные английские буквы.
+
+Выходные данные
+Если решение существует, выведите в первой строке «YES», а во второй — порядок, в котором нужно расставить кубики, в виде строки из n символов, так же, как во вводе. Если есть несколько решений, выведите любое.
+
+Если решения нет, выведите одну строку «NO».
+
+Примеры
+входные данныеСкопировать
+7
+GBBBRRG
+выходные данныеСкопировать
+YES
+BRBGBGR
+входные данныеСкопировать
+4
+BBBG
+выходные данныеСкопировать
+NO
+"""
+class ProverkaStorki:
+    def __init__(self):
+        self.f = 0
+    
+    def main(self, stroka, generator):
+        for i in range(len(stroka) - 1):
+            generator = i
+            if stroka[i] == stroka[i + 1]:
+                while stroka[generator] == stroka[generator + 1]:
+                    stroka[generator], stroka[generator - 1] = stroka[generator - 1], stroka[generator]
+                    generator -= 1
+        return s
+    
+    def testing(self, string):
+        for i in range(len(string) - 1):
+            if string[i] == string[i + 1]:
+                return True
+        return False
+
+
+z = int(input())
+a = input()
+b = dict()
+for i in set(a):
+    b[i] = a.count(i)
+c = list(b.values())
+c.sort(reverse=True)
+if z <= 1:
+    print("YES")
+    print(a)
+    exit(0)
+if sum(c) - max(c) < max(c):
+    print("NO")
+    exit()
+# for i in range(0, len(c) - int(bool(len(c) % 2)), 2):
+#     if c[i] - c[i + 1] >= 2:
+#         print("NO")
+#         exit(0)
+h = list(set(a))
+ggg = ""
+s = ""
+a = list(a)
+for i in range(z):
+    if h[i % len(h)] not in a:
+        h.remove(h[i % len(h)])
+    s += h[i % len(h)]
+    if h[i % len(h)] not in a:
+        h.remove(h[i % len(h)])
+    if len(s) >= 1 and s[-1] == h[i % len(h)]:
+        ggg += h[i % len(h)]
+    if h[i % len(h)] not in a:
+        h.remove(h[i % len(h)])
+    a.remove(h[i % len(h)])
+    if h[i % len(h)] not in a:
+        h.remove(h[i % len(h)])
+
+rt = ProverkaStorki()
+s = list(s)
+while rt.testing(s):
+    rt.main(s, 0)
+print("YES")
+print(*s, sep="")
+
