@@ -29,9 +29,9 @@ NO
 """
 class ProverkaStorki:
     def __init__(self):
-        self.f = 0
+        self.generator = 0
     
-    def main(self, stroka, generator):
+    def main(self, stroka):
         for i in range(len(stroka) - 1):
             generator = i
             if stroka[i] == stroka[i + 1]:
@@ -86,7 +86,6 @@ for i in range(z):
 rt = ProverkaStorki()
 s = list(s)
 while rt.testing(s):
-    rt.main(s, 0)
+    rt.main(s)
 print("YES")
 print(*s, sep="")
-
