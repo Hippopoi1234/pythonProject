@@ -1,0 +1,25 @@
+a = int(input())
+b = list(map(int, input().split()))
+c = int(input())
+d = list(map(int, input().split()))
+e = int(input())
+k = list(map(int, input().split()))
+f = set(k)
+g = set(d)
+ff = f.intersection(g)
+summary = 0
+while ff != set():
+    for i in ff:
+        k.remove(i)
+    f.difference_update(ff)
+    ff = f.intersection(g)
+    summary += c
+for i in k:
+    if i in d:
+        if c > b[i - 1]:
+            summary += b[i - 1]
+        else:
+            summary += c
+    else:
+        summary += b[i - 1]
+print(summary)
