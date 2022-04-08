@@ -4,13 +4,12 @@ b = {}
 s = ""
 for i in a:
     b[i] = a.count(i)
-if max(b.values()) > len(a) // 2:
-    print("NO")
-    exit()
+# if max(b.values()) > (len(a) // 2) + 1:
+#     print("NO")
+#     exit()
 val = list(b.values())
 key = list(b.keys())
-# print(b)
-print("YES")
+# print("YES")
 indexing = 0
 while sum(val) != 0:
     indexing = 0
@@ -31,6 +30,12 @@ while sum(val) != 0:
     if val[indexing] == 0:
         val.remove(val[indexing])
         key.remove(key[indexing])
-#     print(s, val)
-# print(val)
-print(s)
+for i in range(len(s) - 1):
+    if s[i] == s[i + 1]:
+        print("NO")
+        exit()
+if len(s) != len(a):
+    print("NO")
+else:
+    print("YES")
+    print(s)
