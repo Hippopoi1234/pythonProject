@@ -1,0 +1,72 @@
+{
+  "Манчестер Сити": {
+    "Scheme": "4-1-2-1-2",
+    "Goalkeeper": ["Ederson"],
+    "Defenders": ["Mendy", "Laporte", "Boateng", "Walker"],
+    "Midfielders": ["Jorginho", "Isco", "De Bruyne", "Dybala"],
+    "Strikers": ["Aguero", "Griezmann"]
+  },
+  "Реал Мадрид": {
+    "Scheme": "4-3-3",
+    "Goalkeeper": ["Courtois"],
+    "Defenders": ["Alphonso Davies", "Rudiger", "Militao", "Carvajal"],
+    "Midfielders": ["Camavinga", "Bellingham", "Valverde"],
+    "Strikers": ["Vinicius", "Mbappe", "Rodrygo"]
+  },
+  "Бавария": {
+    "Scheme": "4-1-2-1-2",
+    "Goalkeeper": ["Neuer"],
+    "Defenders": ["Davies", "Kim Min Jae", "Upamekano", "Laimer"],
+    "Midfielders": ["Goretzka", "Musiala", "Kimmih"],
+    "Strikers": ["Koman", "Kane", "Sane"]
+  },
+  "Ливерпуль": {
+    "Scheme": "4-1-2-3",
+    "Goalkeeper": ["Alisson"],
+    "Defenders": ["Robertson", "Van Dijk", "Gomez", "Alexander-Arnold"],
+    "Midfielders": ["Bajceltic", "Fabinho", "Henderson"],
+    "Strikers": ["Nunez", "Gakpo", "Salah"]
+  },
+  "Рома": {
+    "Scheme": "3-5-2",
+    "Goalkeeper": ["Rui"],
+    "Defenders": ["Ibanez", "Smalling", "Mancini"],
+    "Midfielders": ["Elsha", "Diawara", "Mkhi", "Pellegrini", "Karsdrop"],
+    "Strikers": ["Abraham", "Zaniolo"]
+  },
+  "ПСЖ": {
+    "Scheme": "4-3-3",
+    "Goalkeeper": ["Donnaruma"],
+    "Defenders": ["T. Hernandez", "L. Hernandez", "Marquinhos", "Hakimi"],
+    "Midfielders": ["Simons", "Bruno Guimaraes", "Vitinha"],
+    "Strikers": ["Barcola", "Concalo", "Dembele"]
+  },
+  "Вильреал": {
+    "Scheme": "4-4-2",
+    "Goalkeeper": ["Rulyi"],
+    "Defenders": ["Estupinian", "Torres", "Albiol", "Foyt"],
+    "Midfielders": ["Koklen", "Pareho", "Kapu", "Lo Chelso"],
+    "Strikers": ["Danjuma", "Chukvueze"]
+  },
+  "Челси": {
+    "Scheme": "5-4-1",
+    "Goalkeeper": ["A. Mendy"],
+    "Defenders": ["Chilwell", "Kounde", "Silva", "Chalobah", "James"],
+    "Midfielders": ["Kante", "Mount", "Mahrez", "Tchouameni"],
+    "Strikers": ["Havertz"]
+  },
+  "Интер": {
+    "Scheme": "3-5-2",
+    "Goalkeeper": ["Martines"],
+    "Defenders": ["Bastoni", "Acerbi", "Skrinar"],
+    "Midfielders": ["Dimarco", "Mkhitaryan", "Canhanoglu", "Barella", "Darmian"],
+    "Strikers": ["Dzeko", "Lautaro"]
+  },
+  "Манчестер Юнайтед": {
+    "Scheme": "4-3-3",
+    "Goalkeeper": ["Onana"],
+    "Defenders": ["Shaw", "Martinez", "Varane", "Dalot"],
+    "Midfielders": ["F. Mount", "Casemiro", "Fernandes"],
+    "Strikers": ["Rashford", "Heylun", "Antoni"]
+  }
+}
